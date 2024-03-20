@@ -1,9 +1,11 @@
+
+
 #!/usr/bin/python3
-def complex_delete(a_dictionary, value):
-    list_keys = list(a_dictionary.keys())
+def square_matrix_simple(matrix=[]):
+    F = []
+    TMP = []
+    for i in range(len(matrix)):
+        TMP = list(map(lambda x: x ** 2, matrix[i]))
+        F.append(TMP)
+    return F
 
-    for value_dic in list_keys:
-        if value == a_dictionary.get(value_dic):
-            del a_dictionary[value_dic]
-
-    return (a_dictionary)
