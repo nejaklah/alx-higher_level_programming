@@ -7,3 +7,4 @@ def square_matrix_simple(matrix=[]):
         TMP = list(map(lambda x: x ** 2, matrix[i]))
         F.append(TMP)
     return F
+
